@@ -2,10 +2,6 @@ const verifyToken = require("./verify-token");
 const jwt = require('jsonwebtoken');
 
 describe("verifyToken", () => {
-//   beforeEach(() => {
-//     verifyToken = jest.fn();
-//   });
-
   it("should successfully verify JWT token", () => {
     const secretToken = 'secret_12345';
     const publicToken = jwt.sign({id: 1}, secretToken);
